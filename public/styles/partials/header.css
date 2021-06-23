@@ -1,0 +1,16 @@
+.Title{
+    background: var(--background-dark);
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.Title a{
+    color: white;
+    font: 50px/1.5 StardosStencil, Limonf3;
+    
+}
+
+.Title .description{
+    font: italic 22px/1.5 Vidaloka, Nokora;
+}

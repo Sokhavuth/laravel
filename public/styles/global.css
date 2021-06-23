@@ -1,0 +1,40 @@
+/*static/styles/base.css*/
+:root{
+  --background: #fc7c6b;
+  --background-dark: #fb503b;
+  --background-light: #fcdbd7;
+  --yellow: #ffd343;
+  --body-font: 14px/1.75 Vidaloka, OdorMeanChey;
+  --link: #fb503b;
+  --color: #2c2c2c;
+  --footer: #2c2c2c;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: var(--link);
+}
+a:hover{
+  opacity: .7;
+}
+.region{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body{
+  color: var(--color);
+  font: var(--body-font);
+  background: var(--background-light);
+}
+
+.Site{
+  background: white;
+  padding: 20px;
+  margin-top: 40px;
+}
