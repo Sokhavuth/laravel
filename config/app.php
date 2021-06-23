@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://127.0.0.1/laravel'),
+    'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY','ot2r0xivmvnccntjmloky7xiigygxpnn'),
+    'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
 
