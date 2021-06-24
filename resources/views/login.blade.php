@@ -8,6 +8,7 @@
     <form action="<?php echo url('/admin') ?>" method='post'>
         <a>Email: </a><input type="email" name="email" required />
         <a>ពាក្យ​សំងាត់ៈ</a><input type='password' name='password' required />
+        <a></a><input type='submit' value='បញ្ជូន' />
         <a></a><div class='message'>{{ $message }}</div>
     </form>
 </div>
