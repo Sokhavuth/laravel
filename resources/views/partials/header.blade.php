@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>{{ $siteTitle }}</title>
         <link href="{{ asset('styles/global.css') }}" rel='stylesheet' />
         <link href="{{ asset('images/site_logo.png') }}" rel='icon' />
         <link href="{{ asset('fonts/setup.css') }}" rel='stylesheet' />
