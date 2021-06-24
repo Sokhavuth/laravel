@@ -1,0 +1,31 @@
+.Login{
+    width: 400px;
+    margin: 20px auto 0;
+    background: var(--background-dark);
+    
+}
+
+.Login form{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-gap: 5px;
+    padding: 20px
+}
+
+.Login .title{
+    color: white;
+    text-align: center;
+    font: 18px/1.5 Oswald, Koulen;
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+}
+
+.Login a{
+    color: white;
+    text-align: right;
+}
+
+.Login input{
+    font: var(--body-font);
+    padding: 0 10px;
+}

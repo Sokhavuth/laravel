@@ -17,7 +17,7 @@
     </div>
   </div>
   <a href="#about">អំពី​យើង​ខ្ញុំ</a>
-  <a href="<?php echo url("/admin") ?>">ចូល​ក្នុង</a>
+  <a href="<?php echo url("/login") ?>">ចូល​ក្នុង</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 

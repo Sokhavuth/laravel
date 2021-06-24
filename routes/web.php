@@ -18,3 +18,9 @@ Route::get('/', function () {
 
     return view('index', $settings);
 });
+
+Route::get('/login', function () {
+    require_once __DIR__ . ('/../settings.php');
+
+    return view('login', $settings);
+});
