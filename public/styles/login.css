@@ -30,3 +30,8 @@
     font: var(--body-font);
     padding: 0 10px;
 }
+
+.Login form .message{
+    text-align: center;
+    color: white;
+}

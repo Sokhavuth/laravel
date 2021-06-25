@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    require_once __DIR__ . ('/../settings.php');
-
-    return view('index', $settings);
+    return view('index', config('settings'));
 });
 
 Route::get('/login', function () {
-    require_once __DIR__ . ('/../settings.php');
-
-    return view('login', $settings);
+    return view('login', config('settings'));
 });
+
+Route::post('/login', [UserController::class, 'checkUser']);
