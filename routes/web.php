@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,21 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/', function () {
-    return view('index', config('settings'));
+    $setting = config('settings');
+
+    $posts = DB::select('select * from posts limit 7');
+    $setting['posts'] = $posts;
+
+    return view('index', $setting);
+});
+
+Route::get('/post/{id}', function ($id) {
+    $setting = config('settings');
+
+    $posts = DB::select('select * from posts where id=?', [$id]);
+    $setting['posts'] = $posts;
+
+    return view('post', $setting);
 });
 
 Route::get('/login', function () {

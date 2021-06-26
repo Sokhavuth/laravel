@@ -16,9 +16,6 @@ class PostController extends Controller
         $datetime = $request->input('datetime');
         
         DB::insert('insert into posts (id, title, content, thumb, created_at) values (?, ?, ?, ?, ?)', [$id, $title, $content, $thumb, $datetime]);
-        $posts = $this->selectPosts();
-        
-        return $posts;
     }
 
     public function selectPosts(){

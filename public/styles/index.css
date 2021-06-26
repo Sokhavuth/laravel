@@ -1,0 +1,22 @@
+.Main{
+    margin-top: 30px;
+}
+.Main .item{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.Main .item a{
+    width: 100%;
+}
+
+.Main .item a img{
+    width: 100%;
+    float: left;
+}
+
+.Main .item .title a{
+    font: 18px/1.5 Oswald, Limonf3;
+}
