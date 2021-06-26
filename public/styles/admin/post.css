@@ -1,0 +1,17 @@
+.Post .ck-editor__editable{
+    min-height: 300px;
+}
+
+.Post form input[name=title]{
+    width: 100%;
+}
+
+.Post form input{
+    font: var(--body-font);
+    padding: 0 10px;
+}
+
+.Post .wrapper{
+    display: grid;
+    grid-template-columns: auto 30% 10%;
+}

@@ -21,7 +21,7 @@ class UserController extends Controller
             $user = DB::select('select * from users where password = ?', [$password]);
             if($user){
                 session(['user'=>$user]);
-                echo "Logged";
+                return view('admin/index', config('settings'));
             }else{
                 $setting = config('settings');
                 $setting['message'] = "ពាក្យ​សំងាត់​មិន​ត្រឹម​ត្រូវ​ទេ!";

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,12 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
+    if(session('user')){
+        return view('admin/index', config('settings'));
+    }
     return view('login', config('settings'));
 });
 
 Route::post('/login', [UserController::class, 'checkUser']);
+
+Route::post('/admin/post', [PostController::class, 'insertPost']);
